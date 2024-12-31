@@ -81,7 +81,7 @@ const stages = [trailsStage, mainStage];
 const randomWords = ["新年快乐", "美淑 我爱你", "永远在一起"];
 const wordDotsMap = {};
 randomWords.forEach((word) => {
-	wordDotsMap[word] = MyMath.literalLattice(word, 3, "Arial", "90px");
+	wordDotsMap[word] = MyMath.literalLattice(word, 3, "Arial", "50px");
 });
 
 // 自定义背景
@@ -1698,7 +1698,7 @@ function getWordDots(word) {
 	// }
 
 	//随机字体大小 60~130
-	var fontSize = Math.floor(Math.random() * 70 + 60);
+	var fontSize = Math.floor(Math.random() * 30 + 60);
 
 	var res = MyMath.literalLattice(word, 3, "Arial", fontSize + "px");
 
